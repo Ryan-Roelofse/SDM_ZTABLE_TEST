@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>SDM:Custom Table: Data Declaration</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>REPS</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>/GDA/SDM_MM_MAT_OBJ_DATA</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>REPS</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>/GDA/SDM_MM_MAT_OBJ_DATA</ORG_MAIN_NAME>
+    <PROGRAMNAME>/GDA/SDM_MM_MAT_OBJ_DATA</PROGRAMNAME>
+    <INCLUDE_BOUND>X</INCLUDE_BOUND>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <SPOTNAME>/GDA/SDM_MM_MAT_ES3</SPOTNAME>
+     <PROGRAMNAME>/GDA/SDM_MM_MAT_OBJ_DATA</PROGRAMNAME>
+     <ENHMODE>S</ENHMODE>
+     <FULL_NAME>\IC:/GDA/SDM_MM_MAT_OBJ_DATA\EX:/GDA/SDM_MM_MAT_EP3\EI</FULL_NAME>
+     <SOURCE>
+      <item>data:</item>
+      <item>GT_CUSTOM_TEST_SDM type ZSDM_T_CUSTOM_TEST.</item>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\IC:/GDA/SDM_MM_MAT_OBJ_DATA\EX:/GDA/SDM_MM_MAT_EP3\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>2</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

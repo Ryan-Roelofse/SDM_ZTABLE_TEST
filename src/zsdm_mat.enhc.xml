@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHC" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SHORTTEXT>SDM Custom Tables:Material</SHORTTEXT>
+   <ENH_CHILDS>
+    <ENHNAME>ZSDM_EH1_ADD_SDM_TYPE_VAL_06</ENHNAME>
+    <ENHNAME>ZSDM_MM_MAT_ES3</ENHNAME>
+    <ENHNAME>ZSDM_MM_MAT_ES4</ENHNAME>
+    <ENHNAME>ZSDM_MM_MAT_ES5</ENHNAME>
+    <ENHNAME>ZSDM_MM_MAT_ES_CLASS</ENHNAME>
+    <ENHNAME>ZSDM_MM_MAT_ES_CLASS2</ENHNAME>
+   </ENH_CHILDS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

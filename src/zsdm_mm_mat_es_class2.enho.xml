@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>SDM:Add to Structure</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>CLAS</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>/GDA/SDM_CL_MAT_SELECTIONS</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>CLAS</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>/GDA/SDM_CL_MAT_SELECTIONS</ORG_MAIN_NAME>
+    <PROGRAMNAME>/GDA/SDM_CL_MAT_SELECTIONS====CP</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>/GDA/SDM_CL_MAT_SELECTIONS====CP</PROGRAMNAME>
+     <ENHMODE>S</ENHMODE>
+     <FULL_NAME>\TY:/GDA/SDM_CL_MAT_SELECTIONS\TY:TY_SELSCREEN\SE:END\EI</FULL_NAME>
+     <SOURCE>
+      <item>types:custom         type c length 1.</item>
+      <item/>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>/GDA/SDM_CL_MAT_SELECTIONS====CP</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\TY:/GDA/SDM_CL_MAT_SELECTIONS\ME:BUILD_SPEC\SE:END\EI</FULL_NAME>
+     <SOURCE>
+      <item>*    if me-&gt;ms_selscreen-custom = abap_true.</item>
+      <item>read table me-&gt;MT_CUSTOM_TEST transporting no fields</item>
+      <item>with key object = mv_spec_matnr binary search.</item>
+      <item>if sy-subrc = 0.</item>
+      <item>loop at me-&gt;MT_CUSTOM_TEST assigning FIELD-SYMBOL(&lt;custom&gt;) from sy-tabix.</item>
+      <item>if &lt;custom&gt;-object &lt;&gt; mv_spec_matnr.</item>
+      <item>exit.</item>
+      <item>else.</item>
+      <item>insert &lt;custom&gt; into table me-&gt;MT_CUSTOM_TEST_spec.</item>
+      <item>endif.</item>
+      <item>endloop.</item>
+      <item>endif.</item>
+      <item>*    endif.</item>
+      <item/>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>/GDA/SDM_CL_MAT_SELECTIONS====CP</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\TY:/GDA/SDM_CL_MAT_SELECTIONS\ME:REFRESH\SE:END\EI</FULL_NAME>
+     <SOURCE>
+      <item>free:</item>
+      <item>me-&gt;mt_custom_test_spec.</item>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>/GDA/SDM_CL_MAT_SELECTIONS====CP</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\TY:/GDA/SDM_CL_MAT_SELECTIONS\ME:MAIN\SE:END\EI</FULL_NAME>
+     <SOURCE>
+      <item>me-&gt;build_custom_table( ).</item>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\TY:/GDA/SDM_CL_MAT_SELECTIONS\TY:TY_SELSCREEN\SE:END\EI</FULL_NAME>
+     <SPACES>
+      <item>14</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+    <item>
+     <FULL_NAME>\TY:/GDA/SDM_CL_MAT_SELECTIONS\ME:BUILD_SPEC\SE:END\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>6</item>
+      <item>8</item>
+      <item>6</item>
+      <item>8</item>
+      <item>10</item>
+      <item>12</item>
+      <item>10</item>
+      <item>12</item>
+      <item>10</item>
+      <item>8</item>
+      <item>6</item>
+      <item>0</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+    <item>
+     <FULL_NAME>\TY:/GDA/SDM_CL_MAT_SELECTIONS\ME:REFRESH\SE:END\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>1</item>
+     </SPACES>
+    </item>
+    <item>
+     <FULL_NAME>\TY:/GDA/SDM_CL_MAT_SELECTIONS\ME:MAIN\SE:END\EI</FULL_NAME>
+     <SPACES>
+      <item>3</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

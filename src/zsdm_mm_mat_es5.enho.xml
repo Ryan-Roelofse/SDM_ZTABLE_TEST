@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Custome Test RSR</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>PROG</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>/GDA/SDM_MAT_REC_STAT_REP2</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>PROG</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>/GDA/SDM_MAT_REC_STAT_REP2</ORG_MAIN_NAME>
+    <PROGRAMNAME>/GDA/SDM_MAT_REC_STAT_REP2</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <SPOTNAME>/GDA/SDM_MM_MAT_ES5</SPOTNAME>
+     <PROGRAMNAME>/GDA/SDM_MAT_REC_STAT_REP2</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\PR:/GDA/SDM_MAT_REC_STAT_REP2\EX:/GDA/SDM_MM_MAT_EP3\EI</FULL_NAME>
+     <SOURCE>
+      <item>GT_CUSTOM_TEST_SDM[] = go_selection-&gt;MT_CUSTOM_TEST_spec[].</item>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+    <ENH_HOOK_IMPL>
+     <SPOTNAME>/GDA/SDM_MM_MAT_ES6</SPOTNAME>
+     <PROGRAMNAME>/GDA/SDM_MAT_REC_STAT_REP2</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\PR:/GDA/SDM_MAT_REC_STAT_REP2\EX:/GDA/SDM_MM_MAT_EP4\EI</FULL_NAME>
+     <SOURCE>
+      <item>gs_sdm_objects-custom_test[] = GT_CUSTOM_TEST_SDM[].</item>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\PR:/GDA/SDM_MAT_REC_STAT_REP2\EX:/GDA/SDM_MM_MAT_EP3\EI</FULL_NAME>
+     <SPACES>
+      <item>3</item>
+     </SPACES>
+    </item>
+    <item>
+     <FULL_NAME>\PR:/GDA/SDM_MAT_REC_STAT_REP2\EX:/GDA/SDM_MM_MAT_EP4\EI</FULL_NAME>
+     <SPACES>
+      <item>3</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>
